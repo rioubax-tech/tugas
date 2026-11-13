@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Glassmorphism Estetis</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixora - Portofolio Kelompok</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Sixora<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#anggota">Anggota Tim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Lingkaran dekorasi di latar belakang untuk mempertegas efek kaca -->
-  <div class="background-shape shape-1"></div>
-  <div class="background-shape shape-2"></div>
+    <!-- Hero Section -->
+    <section id="tentang" class="hero">
+        <div class="container">
+            <h1>Halo, Kami Tim Sixora</h1>
+            <p>Kumpulan 6 kreator dan developer yang berkolaborasi membangun karya digital bersama.</p>
+        </div>
+    </section>
 
-  <!-- Kartu Glassmorphism -->
-  <div class="glass-card">
-    <div class="profile-img"></div>
-    <h2>Alex Rivera</h2>
-    <p class="title">UI/UX Designer & Developer</p>
-    <p class="description">
-      Menciptakan pengalaman digital yang indah dan intuitif dengan sentuhan desain modern.
-    </p>
-    <div class="glass-buttons">
-      <a href="#" class="btn btn-primary">Follow</a>
-      <a href="#" class="btn btn-secondary">Message</a>
-    </div>
-  </div>
+    <!-- Daftar 6 Anggota -->
+    <section id="anggota" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Anggota Kelompok</h2>
+            <div class="team-grid">
+                
+                <!-- Anggota 1 -->
+                <div class="card">
+                    <img src="assets/foto1.jpg" alt="Foto Rio" class="avatar">
+                    <h3>Rio (Anggota 1)</h3>
+                    <p class="role">Frontend Developer</p>
+                    <a href="anggota/anggota1.html" class="btn">Lihat Portofolio</a>
+                </div>
 
+                <!-- Anggota 2 -->
+                <div class="card">
+                    <img src="assets/foto2.jpg" alt="Foto Anggota 2" class="avatar">
+                    <h3>Nama Anggota 2</h3>
+                    <p class="role">UI/UX Designer</p>
+                    <a href="anggota/anggota2.html" class="btn">Lihat Portofolio</a>
+                </div>
+
+                <!-- Anggota 3 -->
+                <div class="card">
+                    <img src="assets/foto3.jpg" alt="Foto Anggota 3" class="avatar">
+                    <h3>Nama Anggota 3</h3>
+                    <p class="role">Backend Developer</p>
+                    <a href="anggota/anggota3.html" class="btn">Lihat Portofolio</a>
+                </div>
+
+                <!-- Anggota 4 -->
+                <div class="card">
+                    <img src="assets/foto4.jpg" alt="Foto Anggota 4" class="avatar">
+                    <h3>Nama Anggota 4</h3>
+                    <p class="role">Content Writer</p>
+                    <a href="anggota/anggota4.html" class="btn">Lihat Portofolio</a>
+                </div>
+
+                <!-- Anggota 5 -->
+                <div class="card">
+                    <img src="assets/foto5.jpg" alt="Foto Anggota 5" class="avatar">
+                    <h3>Nama Anggota 5</h3>
+                    <p class="role">Graphic Designer</p>
+                    <a href="anggota/anggota5.html" class="btn">Lihat Portofolio</a>
+                </div>
+
+                <!-- Anggota 6 -->
+                <div class="card">
+                    <img src="assets/foto6.jpg" alt="Foto Anggota 6" class="avatar">
+                    <h3>Nama Anggota 6</h3>
+                    <p class="role">Project Manager</p>
+                    <a href="anggota/anggota6.html" class="btn">Lihat Portofolio</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sixora Team (sixora.web.id). Dibuat bersama di GitHub.</p>
+    </footer>
 </body>
 </html>
