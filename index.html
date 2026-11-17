@@ -227,6 +227,101 @@
             font-size: 14px;
         }
 
+        /* BADGE KELOMPOK (HOME) */
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* MATERI cPANEL */
+        .materi-block {
+            max-width: 1000px;
+            margin: 0 auto 25px;
+        }
+
+        .card.left {
+            text-align: left;
+        }
+
+        .card.static:hover {
+            transform: none;
+        }
+
+        .card.left h3 {
+            color: #38bdf8;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card.left p,
+        .card.left li {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .card.left ol,
+        .card.left ul {
+            padding-left: 20px;
+        }
+
+        .card.left li {
+            margin-bottom: 6px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 15px;
+        }
+
+        .feature {
+            background: #0b1120;
+            border: 1px solid #263a59;
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .feature strong {
+            display: block;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .feature span {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        code {
+            background: #0b1120;
+            color: #38bdf8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
         /* MODAL BIODATA */
         .overlay {
             position: fixed;
@@ -404,7 +499,7 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#team">Team</a>
-            <a href="#projects">Projects</a>
+            <a href="#materi">Materi</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -412,6 +507,7 @@
     <!-- HOME -->
     <section class="hero" id="home">
         <div class="hero-content">
+            <div class="badge">KELOMPOK 2 &middot; TKJ &middot; SMK MUHAMMADIYAH 4 JAKARTA</div><br>
             <span>WELCOME TO OUR PORTFOLIO</span>
 
             <h1>SIXORA GROUP</h1>
@@ -423,7 +519,10 @@
                 di bidang teknologi.
             </p>
 
-            <a href="#about" class="btn">Explore More</a>
+            <div class="hero-buttons">
+                <a href="#about" class="btn">Explore More</a>
+                <a href="#materi" class="btn outline">Materi: Pengenalan cPanel</a>
+            </div>
         </div>
     </section>
 
@@ -455,39 +554,97 @@
         <div class="team-container" id="teamContainer"></div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="about">
+    <!-- MATERI cPANEL -->
+    <section id="materi">
         <div class="section-title">
-            <h2>Our Projects</h2>
-            <p>Dokumentasi dan hasil karya kelompok</p>
+            <h2>Materi: Pengenalan cPanel</h2>
+            <p>Dipresentasikan oleh Kelompok 2 &middot; Sixora Group</p>
         </div>
 
-        <div class="project-container">
-
-            <div class="card">
-                <h3>Computer Networking</h3>
+        <div class="materi-block">
+            <div class="card left static">
+                <h3>1. Apa itu cPanel?</h3>
                 <p>
-                    Pembelajaran instalasi dan konfigurasi
-                    jaringan komputer.
+                    cPanel adalah <strong>control panel hosting berbasis web</strong>
+                    dengan tampilan grafis. Lewat cPanel, kita bisa mengelola
+                    hosting dan website langsung dari browser, tanpa harus
+                    mengetik perintah di terminal server. cPanel umumnya berjalan
+                    di server Linux dan banyak dipakai oleh penyedia layanan hosting.
                 </p>
             </div>
+        </div>
 
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>
-                    Pembuatan dan pengembangan website
-                    menggunakan HTML dan CSS.
-                </p>
+        <div class="materi-block">
+            <div class="card left static">
+                <h3>2. Fitur Utama cPanel</h3>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <strong>File Manager</strong>
+                        <span>Upload, edit, dan atur file website dari browser. Folder utamanya <code>public_html</code>.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Domains</strong>
+                        <span>Menambah subdomain, addon domain, dan pengalihan (redirect).</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Email Accounts</strong>
+                        <span>Membuat email dengan domain sendiri, misalnya <code>nama@domain.com</code>.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Databases</strong>
+                        <span>Membuat database MySQL dan mengelolanya lewat phpMyAdmin.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>SSL/TLS</strong>
+                        <span>Mengaktifkan HTTPS agar koneksi website lebih aman.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Backup</strong>
+                        <span>Mencadangkan dan memulihkan file serta database website.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Metrics</strong>
+                        <span>Melihat statistik pengunjung, pemakaian disk, dan bandwidth.</span>
+                    </div>
+                    <div class="feature">
+                        <strong>Installer Aplikasi</strong>
+                        <span>Memasang aplikasi seperti WordPress dengan cepat (tergantung penyedia hosting).</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="materi-block two-col">
+            <div class="card left static">
+                <h3>3. Cara Login ke cPanel</h3>
+                <ol>
+                    <li>Buka alamat <code>namadomain.com/cpanel</code> atau <code>namadomain.com:2083</code> di browser.</li>
+                    <li>Masukkan <em>username</em> dan <em>password</em> dari penyedia hosting.</li>
+                    <li>Klik <strong>Log in</strong> untuk masuk ke dashboard cPanel.</li>
+                </ol>
             </div>
 
-            <div class="card">
-                <h3>Server Administration</h3>
-                <p>
-                    Pembelajaran konfigurasi dan
-                    administrasi server.
-                </p>
+            <div class="card left static">
+                <h3>4. Upload Website lewat File Manager</h3>
+                <ol>
+                    <li>Login ke cPanel, lalu buka <strong>File Manager</strong>.</li>
+                    <li>Masuk ke folder <code>public_html</code>.</li>
+                    <li>Klik <strong>Upload</strong>, pilih file <code>index.html</code> beserta file pendukungnya.</li>
+                    <li>Buka nama domain di browser untuk memastikan website tampil.</li>
+                    <li>(Opsional) Aktifkan SSL agar website memakai HTTPS.</li>
+                </ol>
             </div>
+        </div>
 
+        <div class="materi-block">
+            <div class="card left static">
+                <h3>5. Kelebihan cPanel</h3>
+                <ul>
+                    <li>Mudah dipakai karena tampilannya grafis dan terorganisir.</li>
+                    <li>Fitur lengkap: file, domain, email, database, keamanan, dan backup dalam satu tempat.</li>
+                    <li>Sangat umum dipakai, sehingga banyak panduan dan dokumentasi yang tersedia.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
